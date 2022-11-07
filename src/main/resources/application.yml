@@ -1,0 +1,21 @@
+server:
+  port: 8100
+spring:
+  redis:
+    host: localhost
+    port: 6379
+  application:
+    name: ms-bank-product-service
+  #config:
+   # import: optional:configserver:http://config-server:8888
+  data: 
+    mongodb:
+     host: localhost
+     port: 27017
+     database: Bank 
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    registerWithEureka: true
+    fetchRegistry: true
